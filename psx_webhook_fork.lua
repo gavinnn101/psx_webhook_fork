@@ -27,7 +27,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 7722306047 then
     function Send(Name, Nickname, Strength, Rarity, Formation, Color, NewPowers, nth)
         local Webhook = _G.Webhook
         local msg = {
-            ["username"] = "Pet Webhook",
+            ["username"] = game.Players.LocalPlayer.Name,
             ["embeds"] = {
                 {
                     ["color"] = tonumber(tostring("0x" .. Color)), --decimal
